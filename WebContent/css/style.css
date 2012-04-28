@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+  padding-top: 0;
+  background: black;
+}
+	
+div#all {
+  border: 30px solid #D4D2B6;
+	margin: auto;
+	margin-top: 0;
+	width: 735px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", "Verdana", "sans-serif";
+  background: #FCF9F5;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+footer {
+	text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+	
+img#nglogo {}
+
+div#banners {
+  text-align: center;
+  padding-top: 20px;
+}
+
+img.banner_full {
+  margin: 20px;
+  height: 100px;
+}
+
+img.banner {
+	margin: 20px;
+  width: 100px;
+}
+
+hr {
+	margin: 40px 10px 40px 10px;
+}
+
