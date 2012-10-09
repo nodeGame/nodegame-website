@@ -3,20 +3,34 @@
 body {
 	margin: 0;
   padding-top: 0;
-  background: black;
+  color: #666;
+  background: #FDF9FF;
+  font: 400 14px/1.6 "Open Sans", sans-serif;
+  background: rgba(255,255,255,.9);
 }
 	
 div#all {
-  border: 30px solid #D4D2B6;
 	margin: auto;
-	margin-top: 0;
-	width: 735px;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", "Verdana", "sans-serif";
-  background: #FCF9F5;
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC;
-  padding: 30px;
+	width: 600px;
+	//font-family: "Arial", "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", "Verdana", "sans-serif";
+  padding: 10px 30px;
 }
+
+div#all h2 {
+	text-align: center;
+}
+
+span#join_span {
+	text-align: center;
+}
+
+span#join_span input{
+  border: 1px solid #CCC;
+  height: 30px;
+  margin: 20px auto;
+}
+
+
 
 header {
   text-align: center;
