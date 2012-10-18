@@ -30,7 +30,9 @@ span#join_span input{
   margin: 20px auto;
 }
 
-
+span.code {
+	font-family: courier, verdana;
+}
 
 header {
   text-align: center;
