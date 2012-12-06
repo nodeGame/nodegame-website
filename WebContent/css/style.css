@@ -34,6 +34,11 @@ span.code {
 	font-family: courier, verdana;
 }
 
+p#ng_at_glance {
+	margin-top: 30px;
+}
+
+
 header {
   text-align: center;
   padding-top: 40px;
