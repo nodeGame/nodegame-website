@@ -23,10 +23,20 @@
     <li>Browse to the nodegame folder and start the server: <span class="code">node server.js</li>
     <li>Browse to the ./games/ultimatum/server/ folder and start the game logic: <span class="code">node logic.js</li>
     <li>Open three or more browser windows pointing to <span class="code">localhost:8080/ultimatum/index.html<span class="code"></li> 
-	</ol>
-		
+	</ol>		
 
-	
+	<h3>node 0.10 patch</h3>
+	If you are using a node version greater or equal than 0.10, you will need to apply this <a href="./data/ng-node10.patch">patch</a>.
+
+	<ol>
+	<li>Copy the patch file into <span class="code">nodegame/node_modules/nodegame-server</span></li>
+	<li>Trom there type: <span class="code">patch -p1 &lt;./ng-node10.patch</span></li>
+	<li>Delete the <span class="code">node_modules</span> directory inside nodegame-server</li>
+        <li>From <span class="code">nodegame/node_modules/nodegame-server/</spann> type: <span class="code">npm install</span></li>
+	</ol>
+
+
+
 	<h3>Resources</h3>
 	
 	<ul>
