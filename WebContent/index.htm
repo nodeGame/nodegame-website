@@ -14,42 +14,28 @@
 	<div id="all">
 	<h2>nodeGame: Web Experiments in the Browser</h2>
 	
-	<p>nodeGame is a free, open source, event-driven javascript framework for online, multiplayer games in the browser.</p>
+	<p>nodeGame is a free and open source javascript framework for on-line, multiplayer, real-time games in the browser.</p>
 	
 	<h3>Get started</h3>
 	<ol>
 	  <li>Download the latest version of <a href="http://nodejs.org/">node.js</a> for your platform</li>
-    <li>From the console type: <span class="code">npm install nodegame</span></li>
-    <li>Browse to the nodegame folder and start the server: <span class="code">node server.js</li>
-    <li>Browse to the ./games/ultimatum/server/ folder and start the game logic: <span class="code">node logic.js</li>
-    <li>Open three or more browser windows pointing to <span class="code">localhost:8080/ultimatum/index.html<span class="code"></li> 
+	  <li>Download the latest version of <a href="http://git-scm.com/">git</a> for your platform</li>
+          <li>Download and run the install script for <a href="https://github.com/nodeGame/nodegame/blob/master/bin/install.sh">Mac/Linux</a>
+            or <a href="https://github.com/nodeGame/nodegame/blob/master/bin/install.cmd">Windows</a>
+          </li>
+          <li>Open a terminal and browse to the <span class="code">nodegame/</span> folder</li>
+          <li>Start the server with the command: <span class="code">node start/ultimatum-server</span></li>
+          <li>Open two or more browser tabs pointing to <span class="code">localhost:8080/ultimatum</span></li>
+          <li>Open a browser tab pointing to <span class="code">localhost:8080/ultimatum/monitor.htm<span></li>
 	</ol>		
-
-	<h3>node 0.10 patch</h3>
-	If you are using a node version greater or equal than 0.10, you will need to apply this <a href="./data/ng-node10.patch">patch</a>.
-
-	<ol>
-	<li>Copy the patch file into <span class="code">nodegame/node_modules/nodegame-server</span></li>
-	<li>From there type: <span class="code">patch -p1 &lt;./ng-node10.patch</span></li>
-	<li>Delete the <span class="code">node_modules</span> directory inside nodegame-server</li>
-        <li>From <span class="code">nodegame/node_modules/nodegame-server/</span> type: <span class="code">npm install</span></li>
-	</ol>
-
-
 
 	<h3>Resources</h3>
 	
 	<ul>
 	   <li>Documentation: <a href="https://github.com/nodeGame/nodegame/wiki">WIKI</a></li>
-     <li>Source code: <a href="https://github.com/nodeGame/">https://github.com/nodeGame/</a></li>
-     <li>Mailing list: <a href="https://groups.google.com/forum/?fromgroups#!forum/nodegame">mailing list</a></li>
+           <li>Source code: <a href="https://github.com/nodeGame/">https://github.com/nodeGame/</a></li>
+           <li>Mailing list: <a href="https://groups.google.com/forum/?fromgroups#!forum/nodegame">mailing list</a></li>
 	</ul>
-
-
-	<h3>Presentations</h2>
-	        <ul>
-           <li>Mini tutorial: <a href="data/nodegame_mini_tutorial_socinfo.pdf">nodeGame at SocInfo2012</a></li>
-        </ul>
 
   </div>
   <footer>
