@@ -5,19 +5,19 @@ body {
     padding-top: 0;
     color: #666;
     background: #FDF9FF;
-    font: 400 14px/1.6 "Open Sans", sans-serif;
+    font: 400 16px/1.6 "Open Sans", sans-serif;
     background: #f4f4f4; /*rgba(255,255,255,.9);*/
 }
 
 div#all {
     margin: auto;
     width: 600px;
-    //font-family: "Arial", "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", "Verdana", "sans-serif";
+    /* font-family: "Arial", "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", "Verdana", "sans-serif"; */
     padding: 10px 30px;
 }
 
 div#all h2 {
-    text-align: center;
+    /* text-align: center; */
 }
 
 span#join_span {
@@ -72,8 +72,14 @@ hr {
     margin: 40px 10px 40px 10px;
 }
 
+p#headline {
+    font-size: 26px;
+    margin: 40px 0;
+}
+
 div#screenshots {
     margin-left: 20px;
+    margin-bottom: 40px;
 }
 
 img.thumb {
