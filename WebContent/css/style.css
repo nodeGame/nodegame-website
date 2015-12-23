@@ -13,11 +13,15 @@ div#all {
     margin: auto;
     width: 600px;
     /* font-family: "Arial", "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", "Verdana", "sans-serif"; */
-    padding: 10px 30px;
+    padding: 0 30px 10px 30px;
 }
 
 div#all h2 {
-    /* text-align: center; */
+    margin-top: 70px;
+}
+
+div#all h2#title {
+   margin-top: 20px;
 }
 
 span#join_span {
@@ -32,6 +36,10 @@ span#join_span input{
 
 span.code {
     font-family: courier, verdana;
+}
+
+span.verybig {
+    font-size: 30px;
 }
 
 p#ng_at_glance {

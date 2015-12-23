@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta type="description" content="nodeGame is a free and open source
 	javascript framework for online, multiplayer, real-time games
-	and experiments in the browser" /> 
+	and experiments in the browser" />
 <meta name="keywords" content="games,node,JavaScript,synchronous,multiplayer,experiment,behavioral">
 <link rel="stylesheet"
 	type="text/css" href="css/style.css" />
@@ -16,14 +16,14 @@
     <!-- <img src="images/ng2f.png" id="nglogo" /> -->
     <img src="images/newlogo_small.jpg" id="nglogo" />
   </header>
-	
+
 	<div id="all">
-	<h2>Real-Time Social Experiments in the Browser</h2>
-	
+	<h2 id="title">Real-Time Social Experiments in the Browser</h2>
+
 	<p id="headline">nodeGame is a free and open source javascript
 	framework for online, multiplayer, real-time games and
 	experiments in the browser.</p>
-        
+
         <div id="screenshots">
           <a href="images/snaps/monitor_interface.jpg" target="_blank"><img src="images/snaps/monitor_interface.jpg" class="thumb"/></a>
            <a href="images/snaps/screenshot_merit_res.jpg" target="_blank"><img src="images/snaps/screenshot_merit_res.jpg" class="thumb"/></a>
@@ -33,11 +33,17 @@
            <a href="images/snaps/VisualTimerWaiting.jpg" target="_blank"><img src="images/snaps/VisualTimerWaiting.jpg" class="thumb"/></a>
         </div>
 
-        <h3><strong>News 27.06.2015: </strong> Release: nodeGame 1.0-beta</h3>
-        
-        Released nodeGame 1.0-beta on github! Hurray!
+        <h2><span class="verybig">_</span> Download Installer 1.x:</h2>
 
-        <h3>Features:</h3>
+        <ul>
+          <li><strong>Stable:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://raw.githubusercontent.com/nodeGame/nodegame/master/bin/install.stable.sh">Mac/Linux</a>
+            &nbsp;&nbsp; or &nbsp;&nbsp; <a href="https://raw.githubusercontent.com/nodeGame/nodegame/master/bin/install.stable.cmd">Windows</a></li>
+          <li><strong>Development:</strong> &nbsp;&nbsp;<a href="https://raw.githubusercontent.com/nodeGame/nodegame/master/bin/install.latest.sh">Mac/Linux</a>
+            &nbsp;&nbsp; or &nbsp;&nbsp; <a href="https://raw.githubusercontent.com/nodeGame/nodegame/master/bin/install.latest.cmd">Windows</a></li>
+        </ul>
+        For detailed instructions see the <a href="#get_started">Get Started</a> section.
+
+        <h2><span class="verybig">_</span> Features:</h2>
 
         <ul>
           <li>Open source and open standard (HTML5)</li>
@@ -55,34 +61,68 @@
           <li>Integrates with external web services, such as Amazon
           Mechanical Turk</li>
         </ul>
-        
-     
 
-	<h3>Get started</h3>
+        <a name="get_started"></a>
+	<h2><span class="verybig">_</span> Get started</h2>
+
+        <h3>Installation</h3>
+        
+        First, make sure to have a recent version of <a href="http://nodejs.org/">node.js</a> installed on your computer.
+	
+        <h4>Stable version</h4>
 	<ol>
-	  <li>Download the latest version of <a href="http://nodejs.org/">node.js</a> for your operating system</li>
-	  <li>Download the latest version of <a href="http://git-scm.com/">git</a> for your operating system</li>
-          <li>Download and run the install script for <a href="https://raw.githubusercontent.com/nodeGame/nodegame/master/bin/install.latest.sh">Mac/Linux</a>
+          <li>Choose the installer for your operating system: <a href="https://raw.githubusercontent.com/nodeGame/nodegame/master/bin/install.stable.sh">Mac/Linux</a>
+            or <a href="https://raw.githubusercontent.com/nodeGame/nodegame/master/bin/install.stable.cmd">Windows</a>
+          </li>
+          <li>Right click and 'save as' the installer into your computer. If you are using Windows make sure to save the installer as a normal file, and <em>not</em> as a text file.</li>
+          <li>If you are using Mac/Linux, open a terminal and type the following commands: <br/>
+            <span class="code">chmod +x install.stable.sh</span></br>
+            <span class="code">./install.stable.sh</span>
+          </li>
+          <li>If you are in Windows, open a terminal and type the following commands: <br/>
+            <span class="code">start install.stable.cmd</span>
+          </li>
+	</ol>
+
+        <h4>Development version</h4>
+
+	<ol>
+           <li>Make sure you have a recent version of <a href="http://git-scm.com/">git</a> installed on your computer</li>
+          <li>Choose the installer for your operating system: <a href="https://raw.githubusercontent.com/nodeGame/nodegame/master/bin/install.latest.sh">Mac/Linux</a>
             or <a href="https://raw.githubusercontent.com/nodeGame/nodegame/master/bin/install.latest.cmd">Windows</a>
           </li>
+          <li>Right click and 'save as' the installer into your computer. If you are using Windows make sure to save the installer as a normal file, and <em>not</em> as a text file.</li>
+          <li>If you are using Mac/Linux, open a terminal and type the following commands: <br/>
+            <span class="code">chmod +x install.latest.sh</span></br>
+            <span class="code">./install.latest.sh</span>
+          </li>
+          <li>If you are in Windows, open a terminal and type the following commands: <br/>
+            <span class="code">start install.latest.cmd</span>
+          </li>
+        </ol>
+
+        <h3>Running the demo game</h3>
+
+        <ol>
+          <li>After the installation is complete a folder named <span class="code">nodegame/</span> is created</li>
           <li>Open a terminal and browse to the <span class="code">nodegame/</span> folder</li>
           <li>Start the server with the command: <span class="code">node launcher.js</span></li>
           <li>Open two or more browser tabs pointing to <span class="code">localhost:8080/ultimatum</span></li>
+          <li>Alternatively, launch a bot connecting to:<br/> <span class="code">localhost:8080/ultimatum/?clientType=autoplay</span></li>
           <li>Open a browser tab pointing to <span class="code">localhost:8080/ultimatum/monitor<span></li>
-	</ol>		
+	</ol>
 
+	<h2><span class="verybig">_</span> Resources</h2>
 
-	<h3>Resources</h3>
-	
 	<ul>
 	  <li>Paper: <a href="data/nodegame_paper.pdf">nodeGame: Real-Time Social Experiments in the Browser</a> <em>(submitted)</em></li>
 	  <li>Documentation: <a href="https://github.com/nodeGame/nodegame/wiki">WIKI</a></li>
           <li>Source code: <a href="https://github.com/nodeGame/">https://github.com/nodeGame/</a></li>
-          <li>Mailing list: <a href="https://groups.google.com/forum/?fromgroups#!forum/nodegame">mailing list</a></li>           
+          <li>Mailing list: <a href="https://groups.google.com/forum/?fromgroups#!forum/nodegame">mailing list</a></li>
 	</ul>
 
-	<h3>How to cite it</h3>
-	
+	<h2><span class="verybig">_</span> How to cite it</h2>
+
         If you use nodeGame for conducting research that leads to a
         scientific publication, please cite the software as
         follows: <em>"nodeGame: Real-Time Social Experiments in the
