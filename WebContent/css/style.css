@@ -95,3 +95,20 @@ img.thumb {
     width: 170px;
     height: 170px;
 }
+
+.mainButton {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.mainButton:hover {
+    background: #007399;
+}
