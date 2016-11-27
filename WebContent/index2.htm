@@ -7,8 +7,8 @@
 	                              javascript framework for online, multiplayer, real-time games
 	                              and experiments in the browser" />
     <meta name="keywords" content="games,node,JavaScript,synchronous,multiplayer,experiment,behavioral">
-    <link rel="stylesheet"
-	  type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
     <title>nodeGame: Online, Real-Time, Synchronous Experiments in the Browser</title>
   </head>
   <body>
@@ -17,6 +17,7 @@
       <img src="images/newlogo_small.jpg" id="nglogo" />
     </header>
 
+<!-- 
     <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -29,6 +30,8 @@
         </div>
       </div>
     </div>
+-->
+
 
     <div id="all">
       <h2 id="title">Online, Real-Time, Synchronous Experiments in
@@ -36,15 +39,24 @@
       
       <p id="headline">nodeGame 3.2 is a free and open source javascript
 	framework for online, multiplayer, real-time games and
-	experiments in the browser.</p>
+	experiments in the browser.
+      </p>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      
       
       <div id="screenshots">
-        <a href="images/snaps/monitor_interface.jpg" target="_blank"><img src="images/snaps/monitor_interface.jpg" class="thumb"/></a>
-        <a href="images/snaps/screenshot_merit_res.jpg" target="_blank"><img src="images/snaps/screenshot_merit_res.jpg" class="thumb"/></a>
-        <a href="images/snaps/screenshot_merit_bid2.jpg" target="_blank"><img src="images/snaps/screenshot_merit_bid2.jpg" class="thumb"/></a>
-        <a href="images/snaps/VisualTimer.jpg" target="_blank"><img src="images/snaps/VisualTimer.jpg" class="thumb"/></a>
-        <a href="images/snaps/VisualRound.jpg" target="_blank"><img src="images/snaps/VisualRound.jpg" class="thumb"/></a>
-        <a href="images/snaps/VisualTimerWaiting.jpg" target="_blank"><img src="images/snaps/VisualTimerWaiting.jpg" class="thumb"/></a>
+        <img id="img1" src="images/snaps/monitor_interface.jpg" alt="Monitor Interface" class="thumb"/>
+        <img id="img2" src="images/snaps/screenshot_merit_res.jpg" alt="Public Good Game with Assortative Matching" class="thumb"/>
+        <img id="img3" src="images/snaps/screenshot_merit_bid2.jpg" alt="Contribution Screen for a Public Good Game" class="thumb"/>
+        <img id="img4" src="images/snaps/VisualTimer.jpg" alt="VisualTimer Widget" class="thumb"/>
+        <img id="img5" src="images/snaps/VisualRound.jpg" alt="VisualRound Widget" class="thumb"/>
+        <img id="img6" src="images/snaps/VisualTimerWaiting.jpg" alt="VisualTimer Widget showing time left to wait" class="thumb"/>
       </div>
       
       <p style="margin: 0 auto; text-align: center">
@@ -120,13 +132,41 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     
-    $(function() {
-        $('img').on('click', function() {
-            $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
-            $('#enlargeImageModal').modal('show');
-        });
-    });
+ //     $(function() {
+ //         $('img').on('click', function() {
+ //             $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+ //             $('#enlargeImageModal').modal('show');
+ //         });
+ //     });
     
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    (function() {
+
+        var imgContainer = document.getElementById('screenshots');
+
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        imgContainer.onclick = function(event) {
+            var img;
+            img = event.target || event.srcElement;
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            captionText.innerHTML = img.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    })();
+
     
   </script>
 </html>
