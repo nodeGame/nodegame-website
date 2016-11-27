@@ -83,6 +83,7 @@ hr {
 p#headline {
     font-size: 26px;
     margin: 40px 0;
+    font-size: bold;
 }
 
 div#screenshots {
