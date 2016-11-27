@@ -11,7 +11,7 @@ body {
 
 div#all {
     margin: auto;
-    width: 600px;
+    width: 635px;
     /* font-family: "Arial", "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", "Verdana", "sans-serif"; */
     padding: 0 30px 10px 30px;
 }
@@ -22,6 +22,9 @@ div#all h2 {
 
 div#all h2#title {
    margin-top: 20px;
+   font-size: 1.6em;
+   font-weight: bold;
+   text-align: center;
 }
 
 span#join_span {
@@ -83,6 +86,7 @@ hr {
 p#headline {
     font-size: 26px;
     margin: 40px 0;
+    margin-left: 20px;
 }
 
 div#screenshots {
@@ -90,11 +94,6 @@ div#screenshots {
     margin-bottom: 40px;
 }
 
-img.thumb {
-    border: 2px solid #CCC;
-    width: 170px;
-    height: 170px;
-}
 
 .mainButton {
     background-color: #008CBA;
@@ -107,8 +106,103 @@ img.thumb {
     font-size: 2em;
     cursor: hand;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .mainButton:hover {
     background: #007399;
+}
+
+/* Screenshots animation */
+
+.thumb {
+    width: 170px;
+    height: 170px;
+    border: 2px solid #CCC;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.thumb:hover { opacity: 0.7; }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */    
+    cursor: pointer;
+    cursor: hand;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
