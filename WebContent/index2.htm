@@ -7,18 +7,21 @@
 	                              javascript framework for online, multiplayer, real-time games
 	                              and experiments in the browser" />
     <meta name="keywords" content="games,node,JavaScript,synchronous,multiplayer,experiment,behavioral">
-
-    <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css" />
-    <script type="text/javascript" src="lib/bootstrap/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <!--    <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css" />
+            <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+            <script type="text/javascript" src="lib/bootstrap/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
     <title>nodeGame: Online, Real-Time, Synchronous Experiments in the Browser</title>
   </head>
   <body>
     <header>
-      <!-- <img src="images/ng2f.png" id="nglogo" /> -->
       <img src="images/newlogo_small.jpg" id="nglogo" />
     </header>
-
+    
     <div id="all">
       <h2 id="title">Online Real-Time Synchronous Experiments.</h2>
       
@@ -26,7 +29,7 @@
 	framework for online, multiplayer, real-time games and
 	experiments in the browser.
       </p>
-
+      
       <!-- The Modal -->
       <div id="myModal" class="modal">
         <span class="close">×</span>
@@ -34,8 +37,11 @@
         <div id="caption"></div>
       </div>
       
-         
+      
+   
+        
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -46,27 +52,32 @@
           
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              1
+
+            <div class="item active">              
+              <div id="screenshots1">                           
+                <img id="img1" src="images/snaps/monitor_interface.jpg" alt="Monitor Interface" class="thumb"/>
+                <img id="img2" src="images/snaps/screenshot_merit_res.jpg" alt="Public Good Game with Assortative Matching" class="thumb"/>
+                <img id="img3" src="images/snaps/screenshot_merit_bid2.jpg" alt="Contribution Screen for a Public Good Game" class="thumb"/>
+                <img id="img4" src="images/snaps/VisualTimer.jpg" alt="VisualTimer Widget" class="thumb"/>
+                <img id="img5" src="images/snaps/VisualRound.jpg" alt="VisualRound Widget" class="thumb"/>
+                <img id="img6" src="images/snaps/ChernoffFaces.jpg" alt="ChernoffFaces Widget" class="thumb"/>
+              </div>              
             </div>
             
             <div class="item">
-              2
+              2aaaaaaaaaaaaaaaaaaaaaaaaa
             </div>
             
             <div class="item">
-              3
+              3aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
             </div>
             
             <div class="item">
-              4
+              4aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
             </div>
           </div>
-
-      <div id="screenshots">
-
-     
-          
+        </div>
+        <div id="carouselContainer">          
           <!-- Left and right controls -->
           <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -78,13 +89,8 @@
           </a>
         </div>
 
-        <img id="img1" src="images/snaps/monitor_interface.jpg" alt="Monitor Interface" class="thumb"/>
-        <img id="img2" src="images/snaps/screenshot_merit_res.jpg" alt="Public Good Game with Assortative Matching" class="thumb"/>
-        <img id="img3" src="images/snaps/screenshot_merit_bid2.jpg" alt="Contribution Screen for a Public Good Game" class="thumb"/>
-        <img id="img4" src="images/snaps/VisualTimer.jpg" alt="VisualTimer Widget" class="thumb"/>
-        <img id="img5" src="images/snaps/VisualRound.jpg" alt="VisualRound Widget" class="thumb"/>
-        <img id="img6" src="images/snaps/ChernoffFaces.jpg" alt="ChernoffFaces Widget" class="thumb"/>
-      </div>
+      
+      
       
       <p style="margin: 0 auto; text-align: center">
         <a href="https://github.com/nodeGame/nodegame/wiki/Getting-Started-v3" target="_blank">
@@ -148,18 +154,22 @@
     </footer>
   </body>
   <script type="text/javascript">
+    
+    $('#myCarousel').carousel({
+        interval: false
+    });
 
     // Screenshots.
     (function() {
-
+        return;
         // Get the modal
         var modal = document.getElementById('myModal');
-
+        
         var imgContainer = document.getElementById('screenshots');
-
+        
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
-
+        
         imgContainer.onclick = function(event) {
             var img;
             img = event.target || event.srcElement;
@@ -173,7 +183,7 @@
             modal.style.display = "none";
         }
     })();
-
+    
     // Analytics.
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-34089835-3']);
@@ -184,7 +194,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-
+    
     
   </script>
 </html>

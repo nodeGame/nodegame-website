@@ -89,11 +89,31 @@ p#headline {
     margin-left: 20px;
 }
 
-div#screenshots {
+div#myCarousel {
     margin-left: 20px;
     margin-bottom: 40px;
+    height: 420px;
+}
+.item {
+    height: 355px;
 }
 
+.carousel-indicators {
+    margin-top: 30px;
+}
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #FFF;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    margin: 0px 10px;
+    background-color: #008CBA;
+}
 
 .mainButton {
     background-color: #008CBA;
