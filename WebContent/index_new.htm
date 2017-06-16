@@ -7,25 +7,94 @@
     <meta type="description" content="nodeGame is a free and open source
 	                              javascript framework for online, multiplayer, real-time games
 	                              and experiments in the browser" />
-    <meta name="keywords" content="games,node,JavaScript,synchronous,multiplayer,experiment,behavioral">
+    <meta name="keywords" content="games,node,JavaScript,synchronous,real-time,multiplayer,experiment,behavioral,social">
+    
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_new.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_new2.css" />
+    
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;amp;subset=latin,latin-ext">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script data-cfasync="false" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script data-cfasync="false" src="js/ismobile.js"></script>
+    <script data-cfasync="false" src="js/app.js"></script>
+    <script data-cfasync="false" src="js/retina.js"></script>
+    <script data-cfasync="false" src="js/prism.js"></script>
+    
     <title>nodeGame: Online Real-Time Synchronous Experiments</title>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
     <header>
+
       <!-- <img src="images/ng2f.png" id="nglogo" /> -->
-      <img src="images/newlogo_small.jpg" id="nglogo" />
+      <div id="navbar">
+        <ul id="navmenu">
+          <li><a href="/" id="home-menu"> <img style="width:50px" src="images/Logo_Square_with_dots.png" id="nglogo" /></a></li>
+          <li class="dropit-open">
+            <ul id="getting-started-menu" class="menu dropit" style="">
+              <li class="dropit-trigger dropit-open"><a href="#">Getting started</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <ul id="guide-menu" class="menu dropit" style="">
+              <li class="dropit-trigger"><a href="https://github.com/nodeGame/nodegame/wiki">Guide</a>
+             
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <ul id="application-menu" class="menu dropit" style="">
+              <li class="dropit-trigger"><a href="/en/4x/api.html">Games</a>
+              
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <ul id="advanced-topics-menu" class="menu dropit" style="">
+              <li class="dropit-trigger"><a href="/en/advanced/developing-template-engines.html">API reference</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul id="resources-menu" class="menu dropit">
+              <li class="dropit-trigger"><a href="#" onclick="scrollTo('resources')">Resources</a>
+              
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+      <div id="header-right-floater">
+        <a class="github-button" href="https://github.com/nodeGame/nodegame" data-size="large" data-show-count="true" aria-label="Star nodeGame/nodegame on GitHub">Star</a>
+      </div>
+
+      
     </header>
 
+
+    
     <div id="all">
+      <!-- <img style="width:100px" src="images/Logo_Square_with_dots.png" id="nglogo" /> -->
+      <div style="text-align: center">
+        <span style="font-size: 50px;">nodeGame</span>
+        <a href="changelog/" id="express-version">4.0 alpha</a>
+      </div>
+      
+      <!-- <img src="images/newlogo_small.jpg" id="nglogo" />-->
+
+
       <h2 id="title">Online Real-Time Synchronous Experiments.</h2>
       
-      <p id="headline">nodeGame 3.5 is a free and open source javascript
-	framework for online, multiplayer, real-time games and
+      <p id="headline">Free and open source JavaScript framework for
+	online, multiplayer, real-time games and behavioral
 	experiments in the browser.
       </p>
-
+      
       <!-- The Modal -->
       <div id="myModal" class="modal">
         <span class="close">×</span>
@@ -50,7 +119,7 @@
       </p>
       
       <h2><span class="verybig">_</span> Features:</h2>
-      
+      <hr>
       <ul>
         <li>Open source and open standard (HTML5)</li>
         <li>100&#37; JavaScript code</li>
@@ -72,12 +141,12 @@
       
       
       <h2><span class="verybig">_</span> Featured Research</h2>
-      
+      <hr>
       <ul>
-
-	    <li>Anderson, Bernauer, Balietti (2017) <a target="_blank" href="http://link.springer.com/article/10.1007/s10584-017-1959-3">"Effects of Fairness Principles on Willingness to Pay for Climate Change Mitigation"</a> <em>Climatic Change</em> (forthcoming)</li>
-
-	    <li>Balietti, Goldstone, Helbing (2016) <a target="_blank" href="http://www.pnas.org/content/early/2016/07/05/1603723113.full">"Peer Review and Competition in the Art Exhibition Game"</a> <em>PNAS</em> 113(30) pp. 8414--8419, </li>
+        
+	<li>Anderson, Bernauer, Balietti (2017) <a target="_blank" href="http://link.springer.com/article/10.1007/s10584-017-1959-3">"Effects of Fairness Principles on Willingness to Pay for Climate Change Mitigation"</a> <em>Climatic Change</em> (forthcoming)</li>
+        
+	<li>Balietti, Goldstone, Helbing (2016) <a target="_blank" href="http://www.pnas.org/content/early/2016/07/05/1603723113.full">"Peer Review and Competition in the Art Exhibition Game"</a> <em>PNAS</em> 113(30) pp. 8414--8419, </li>
         
         <li>Nax, Balietti, Murphy, Helbing (2016) <a href="games/merit/">"Meritocratic Matching Can Dissolve the Efficiency-Equality Tradeoff: The Case of Voluntary Contributions Games"</a></li>
         
@@ -85,46 +154,50 @@
         
         
       </ul>
+
+      <a name="resources"></a>
+      <div style="background: width: 100%">
+        
+        <h2><span class="verybig">_</span> Resources</h2>
+        <hr>
       
-      <h2><span class="verybig">_</span> Resources</h2>
-      
-      <ul>
-	<li>Publication: <a href="http://link.springer.com/article/10.3758/s13428-016-0824-z" target="_blank">Paper at Behavior Research Methods</a>&nbsp;(<a href="data/nodegame_paper.pdf">Copyright-free</a>)</li>
-	<li>Documentation: <a href="https://github.com/nodeGame/nodegame/wiki">WIKI</a></li>
-        <li>Node Interactive North-America: <a href="https://www.slideshare.net/NodejsFoundation/workshop-science-meets-industry-online-behavioral-experiments-with-nodegame-stefano-balietti-northeastern-university"
-        target="_blank">nodeGame 3.x workshop slides</a></li>
-        <li>Source code: <a href="https://github.com/nodeGame/">https://github.com/nodeGame/</a></li>
-        <li>Twitter: <a target="_blank" href="https://twitter.com/nodegameorg">@nodegameorg</a></li>
-        <li>Mailing list: <a href="https://groups.google.com/forum/?fromgroups#!forum/nodegame">mailing list</a></li>
-      </ul>
+        <ul>
+	  <li>Publication: <a href="http://link.springer.com/article/10.3758/s13428-016-0824-z" target="_blank">Paper at Behavior Research Methods</a>&nbsp;(<a href="data/nodegame_paper.pdf">Copyright-free</a>)</li>
+	  <li>Documentation: <a href="https://github.com/nodeGame/nodegame/wiki">WIKI</a></li>
+          <li>Node Interactive North-America: <a href="https://www.slideshare.net/NodejsFoundation/workshop-science-meets-industry-online-behavioral-experiments-with-nodegame-stefano-balietti-northeastern-university"
+                                                 target="_blank">nodeGame 3.x workshop slides</a></li>
+          <li>Source code: <a href="https://github.com/nodeGame/">https://github.com/nodeGame/</a></li>
+          <li>Twitter: <a target="_blank" href="https://twitter.com/nodegameorg">@nodegameorg</a></li>
+          <li>Mailing list: <a href="https://groups.google.com/forum/?fromgroups#!forum/nodegame">mailing list</a></li>
+        </ul>
+      </div>
       
       <h2><span class="verybig">_</span> How to cite it</h2>
-      
+      <hr>
       If you use nodeGame for conducting your own research, please
       cite the software as follows: <em>Balietti (2016) "nodeGame:
         Real-Time, Synchronous, Online Experiments in the
         Browser"</em> Behavior Research Methods (forthcoming).
-
-      <h2><span class="verybig">_</span> Live Tweets</h2>
       
-      <a class="twitter-timeline" data-width="600" data-height="600" data-theme="light" href="https://twitter.com/nodegameorg">Tweets by nodegameorg</a>
+      <h2>&nbsp;</h2>
+      <a class="twitter-timeline" data-width="600" data-height="600" data-theme="light" href="https://twitter.com/nodegameorg">_ Live Tweets by nodegameorg</a>
       <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <footer></footer>
   </body>
   <script type="text/javascript">
-
+    
     // Screenshots.
     (function() {
-
+        
         // Get the modal
         var modal = document.getElementById('myModal');
-
+        
         var imgContainer = document.getElementById('screenshots');
-
+        
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
-
+        
         imgContainer.onclick = function(event) {
             var img;
             img = event.target || event.srcElement;
@@ -138,7 +211,7 @@
             modal.style.display = "none";
         }
     })();
-
+    
     // Analytics.
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-34089835-3']);
@@ -149,7 +222,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-
+    
     
   </script>
 </html>

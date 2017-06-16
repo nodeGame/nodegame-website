@@ -1,0 +1,45 @@
+<svg width="252" height="252" viewBox="0 0 252 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Logo Square</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(4 0 0 4 2304 2364)" figma:type="canvas">
+<g id="Logo Square" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-575.714 -590.383)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-575.714 -590.383)" fill="#CDCDCD" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Logo" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector (Stroke)" style="mix-blend-mode:multiply;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 -558.808 -567.695)" fill="#FB5C7F" fill-opacity="0.8" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector (Stroke)" style="mix-blend-mode:multiply;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 -550.318 -559.205)" fill="#1BA3E3" fill-opacity="0.8" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector (Stroke)" style="mix-blend-mode:multiply;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 -541.828 -550.715)" fill="#80F3ED" fill-opacity="0.8" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector (Stroke)" style="mix-blend-mode:multiply;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(-0.707107 -0.707107 0.707107 -0.707107 -538.29 -547.177)" fill="#7C50B7" fill-opacity="0.9" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector (Stroke)" style="mix-blend-mode:multiply;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 -550.318 -542.225)" fill="#F9C849" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector (Stroke)" style="mix-blend-mode:multiply;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(-0.707107 -0.707107 0.707107 -0.707107 -538.29 -564.157)" fill="#7C50B7" fill-opacity="0.9" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector (Stroke)" style="mix-blend-mode:multiply;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(-0.707107 -0.707107 0.707107 -0.707107 -546.78 -538.687)" fill="#7C50B7" fill-opacity="0.9" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector (Stroke)" style="mix-blend-mode:multiply;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(-0.707107 -0.707107 0.707107 -0.707107 -529.8 -555.667)" fill="#F9C849" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 18C 0 8.05887 8.05887 0 18 0L 44.3568 0C 54.2979 0 62.3568 8.05887 62.3568 18L 62.3568 44.3568C 62.3568 54.2979 54.2979 62.3568 44.3568 62.3568L 18 62.3568C 8.05887 62.3568 0 54.2979 0 44.3568L 0 18Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 44.3568 1L 18 1C 8.61116 1 1 8.61116 1 18L 1 44.3568C 1 53.7456 8.61116 61.3568 18 61.3568L 44.3568 61.3568C 53.7456 61.3568 61.3568 53.7456 61.3568 44.3568L 61.3568 18C 61.3568 8.61116 53.7456 1 44.3568 1ZM 18 0C 8.05887 0 0 8.05887 0 18L 0 44.3568C 0 54.2979 8.05887 62.3568 18 62.3568L 44.3568 62.3568C 54.2979 62.3568 62.3568 54.2979 62.3568 44.3568L 62.3568 18C 62.3568 8.05887 54.2979 0 44.3568 0L 18 0Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 0 2.50138C 0 1.11991 1.11991 0 2.50138 0L 14.508 0C 15.8895 0 17.0094 1.11991 17.0094 2.50138C 17.0094 3.88285 15.8895 5.00276 14.508 5.00276L 2.50138 5.00276C 1.11991 5.00276 0 3.88285 0 2.50138Z"/>
+</defs>
+</svg>
