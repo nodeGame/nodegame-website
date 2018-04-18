@@ -41,8 +41,8 @@
           </li>
           <li>
           <li>
-            <ul id="download-menu" style="">
-              <li><a href="download.htm">Install</a>             
+            <ul id="install-menu" style="">
+              <li><a href="install.htm">Install</a>             
               </li>
             </ul>
           </li>
@@ -60,8 +60,8 @@
             </ul>
           </li>
           <li>
-            <ul id="publications-menu" class="menu">
-              <li><a href="publications.htm">Research</a>
+            <ul id="research-menu" class="menu">
+              <li><a href="research.htm">Research</a>
               
               </li>
             </ul>
