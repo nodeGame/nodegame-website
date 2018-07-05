@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="images/newlogo.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta type="description" content="nodeGame is a free and open source
+	                              javascript framework for online, multiplayer, real-time games
+	                              and experiments in the browser" />
+    <meta name="keywords" content="games,node,JavaScript,synchronous,real-time,multiplayer,experiment,behavioral,social">
+    
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_new.css" />
+    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;amp;subset=latin,latin-ext">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <script data-cfasync="false" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    
+    <title>nodeGame: FAQ</title>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <div id="navbar">
+        <ul id="navmenu">
+          <li>
+            <a href="index.htm" id="home-img">
+              <img style="width:50px" src="images/Logo_Square_with_dots.png" id="nglogo" />
+            </a>
+          </li>
+          <li>
+          <li><a href="index.htm" id="home-menu">Home</a></li>
+          <li>
+            <ul id="demo-menu" style="">
+              <li><a href="https://nodegamedemo.herokuapp.com" target="_blank">Demo</a>             
+              </li>
+            </ul>
+          </li>
+          <li>
+          <li>
+            <ul id="install-menu" style="">
+              <li><a href="install.htm">Install</a>             
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul id="documentation-menu" class="menu">
+              <li><a href="https://github.com/nodeGame/nodegame/wiki" target="_blank">Docs</a>
+              
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <ul id="faq-menu" class="menu">
+              <li><a href="faq.htm">FAQ</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul id="research-menu" class="menu">
+              <li><a href="research.htm">Research</a>
+              
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div id="header-right-floater">
+        
+        <a href="https://twitter.com/nodegameorg" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @nodegameorg</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <a class="github-button" href="https://github.com/nodeGame/nodegame" data-size="large" data-show-count="true" aria-label="Star nodeGame/nodegame on GitHub">Star</a>
+
+
+        <a style="margin-top:0; top:0;" href="https://groups.google.com/forum/?fromgroups#!forum/nodegame" target="_blank"><button id="forum-button"><img style="margin-top:0; top:0; height: 20px" src="images/google-group-scaled.png" alt="Forum" /> Forum</button></a> 
+      </div>
+    </header>
+
+    
+    <div id="all">
+
+      <h2 id="title">Frequently Asked Questions (FAQ)</h2>
+      <hr>
+
+      <dl id="dl-faq">
+        <dt>What is nodeGame?</dt>
+        <dd>
+          NodeGame is a open source JavaScript/HTML5 framework for
+          conducting multiplayer games and synchronous behavioral
+          experiments online and in the lab directly in the browser
+          window.
+
+        <dt>Why is it called nodeGame?</dt>
+        <dd>
+          The name comes from the <a href="https://nodejs.org/en/"
+        target="_blank">Node.JS</a> technology in which it is
+        implemented, which is particularly suited for real-time
+        interactive games.</dd>
+
+        <dt>What is it good at?</dt>
+        <dd>
+          It is specifically designed to support group behavior
+          experimental research with:
+
+          <ul class="myul">
+            <li>large group sizes (hundreds of players)</li>
+            <li>real-time (but also discrete time) interactions,</li>
+            <li>batches of simultaneous experiments.</li>
+          </ul>
+
+        </dd>
+
+        <dt>Is it free?</dt>
+        <dd>
+          Yes, it is!
+        </dd>
+
+        <dt>Is it open source?</dt>
+        <dd>
+          Yes, it is! Check the complete source code
+          on <a href="https://github.com/nodeGame"
+          target="_blank">Github</a>.
+        </dd>
+
+        <dt>How does it work?</dt>
+        <dd>
+          nodeGame defines an <em>API (Application Programming
+          Interface)</em> through which experimenters can program new
+          strategic environments and configure the platform.
+
+          Most of the complexity is hidden away by the API, but
+          programming knowledge of JavaScript is required.
+
+        </dd>
+
+        <dt>What is the learning curve?</dt>
+        
+        For a developer familiar with other languages, but with little
+        knowledge of JavaScript, it might take 2-3 days to understand
+        the framework. Once a developer is familiar with the
+        framework, it usually takes a couple of days to come up with a
+        testable prototype of a simple game/experiment.
+
+        <dt>What languages do I need to know to create games in
+        nodeGame?</dt>
+
+        You need low/medium knowledge of the
+        <a href="http://javascript.info"
+           target="_blank">JavaScript</a> language, and you need to
+           understand how to create HTML pages.
+
+        Knowing <a href="https://nodejs.org/en/"
+        target="_blank">Node.JS</a> specific syntax will help you to
+        extend the platform or to create more complex games, but it is
+        not a requirement.
+
+        To create rich user interfaces, frameworks such as
+        <a href="https://jquery.com/" target="_blank">jQuery</a>
+        or <a href="http://getbootstrap.com/"
+        target="_blank">Bootstrap</a> can help.
+
+        Finally, if you want to dynamically build the HTML you might
+        look into the <a href="https://pugjs.org/"
+        target="_blank">Pug</a> templating language.
+      
+      
+      
+        <a name="q_howmuch"></a>
+        <dt>How much do I need to code for running a game/experiment?</dt>
+
+        NodeGame is a programming framework, so programming is required. A
+        <a href="https://github.com/nodeGame/nodegame-generator"
+        target="_blank">command line utility</a> is provided to
+        generate a game template that can be modified and adapted to
+        your needs.
+
+        The following resources are provided by the framework:
+
+        <ul class="myul">
+          <li>Waiting rooms</li>
+          <li>Internal database</li>
+          <li>Synchronization rules</li>
+          <li>Timers</li>
+          <li>Pausing / Resuming game</li>
+          <li>Page customization (e.g. disable right click, prompt on leave
+            messages, waiting screens, etc.)</li>
+          <li>Widgets (visualize timers, rounds number, language selector,
+            debug information, chat, etc.)</li>
+          <li>Several event handlers (on disconnect, on entering a new step,
+            etc.)</li>
+          <li>Authorization rules</li>
+          <li>Requirements rules</li>
+          <li>Game levels</li>
+        </ul>
+
+        The following resources must be coded by the developer:
+
+        <ul class="myul">
+          <li>A custom game interface (HTML or templates)</li>
+          <li>The game sequence</li>
+          <li>The interaction among players</li>
+        </ul>
+
+        The following might be coded by the developer:
+
+        <ul class="myul">
+          <li>What actions to take when a disconnected player
+            disconnects/reconnects</li>
+        </ul>
+        
+        <dt>Is it compatible with Amazon Mechanical Turk?</dt>
+        <dd>
+          Yes, nodeGame has integration with Amazon Mechanical Turk,
+          see
+          the <a href="https://github.com/nodeGame/nodegame/wiki/nodeGame-Mturk"
+          target="_blank">documentation</a>.
+        </dd>
+
+        <dt>How do I get technical help?</dt>
+        <dd>
+          You can write directly
+          to <a href="mailto:help@nodegame.org">help@nodegame.org</a>
+          or post your question to
+          the <a href="https://groups.google.com/forum/?fromgroups#!forum/nodegame"
+          target="_blank">forum</a>. You should get an answer within
+          24 hours.
+        </dd>
+
+      </dl>
+      
+    </div>
+    <footer></footer>
+  </body>
+  <script type="text/javascript">
+    // Analytics.
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34089835-3']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    
+    
+  </script>
+</html>
