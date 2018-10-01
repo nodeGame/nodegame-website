@@ -13,11 +13,20 @@ function validateSignature($payload) {
   return hash_equals($payloadHash, $gitHubSignature);
 }
 
-$str = "OK";
+function logIt($txt, $success = FALSE) {
+  $mydate = date('l jS \of F Y h:i:s A'); 
+  $my_file = 'log.txt';
+  $handle = fopen($my_file, 'a') or die('Cannot open file:  '.$my_file);
+  fwrite($handle, $mydate . " > " . $txt . "\n");
+  fclose($handle);
+  if (!success) {
+    die($txt);
+  }
+}
 
 // Make sure that it is a POST request.
 if (strcasecmp($_SERVER['REQUEST_METHOD'], 'POST') != 0) {
-    $str = 'Request method must be POST!';
+    logIt('Request method must be POST!');
 }
  
 // Make sure that the content type of the POST
@@ -26,45 +35,30 @@ $contentType = isset($_SERVER["CONTENT_TYPE"]) ?
                  trim($_SERVER["CONTENT_TYPE"]) : '';
                  
 if (strcasecmp($contentType, 'application/json') != 0) {
-    $str = 'Content type must be: application/json';
+    logIt('Content type must be: application/json');
 }
  
 // Receive the RAW post data.
 $content = trim(file_get_contents("php://input"));
+
+if (!validateSignature($content)) {
+  logIt("Invalid signature: " . @$_SERVER['HTTP_X_HUB_SIGNATURE']);
+}
  
 // Attempt to decode the incoming RAW post data from JSON.
 $decoded = json_decode($content, true);
  
 // If json_decode failed, the JSON is invalid.
 if (!is_array($decoded)) {
-    $str = 'Received content contained invalid JSON!';
+    logIt('Received content contained invalid JSON!');
 }
-
-  $gitHubSignatureHeader = @$_SERVER['HTTP_X_HUB_SIGNATURE'];
-  list ($algo, $gitHubSignature) = explode("=", $gitHubSignatureHeader);
-  if ($algo !== 'sha1') {
-    // See https://developer.github.com/webhooks/securing/
-    return false;
-  }
-  $payloadHash = hash_hmac($algo, $payload, $secret);
-  $str =  $payloadHash . "  " . $gitHubSignature;
-  
-  //return hash_equals($payloadHash, $gitHubSignature);
-
-//if (!validateSignature($decoded)) {
-//  $str = "Invalid signature: " . @$_SERVER['HTTP_X_HUB_SIGNATURE'];;
-//}
 
 // Process the JSON.
-$mydate = date('l jS \of F Y h:i:s A'); 
-$my_file = 'log.txt';
-$handle = fopen($my_file, 'a') or die('Cannot open file:  '.$my_file);
-fwrite($handle, $mydate . " > " . $str . "\n");
-fclose($handle);
 
-if ($str == "OK" ) {
-  $my_file = 'file.txt';
-  $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-  fwrite($handle, $content);
-  fclose($handle);
-}
+$my_file = 'file.txt';
+$handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+fwrite($handle, $content);
+fclose($handle);
+logIt("OK", TRUE);
+
+
