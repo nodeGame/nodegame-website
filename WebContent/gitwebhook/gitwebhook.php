@@ -62,7 +62,7 @@ $prefix = 'https://github.com/nodeGame/nodegame-website/blob/master/';
 $updated = array();
 // There might be more than 1 commit from last push.
 $commits = $decoded["commits"];
-$web_dir = __DIR__ . '../';
+$web_dir = realpath(__DIR__ . '/..') . '/';
 foreach ($commits as $commit_data) {
     $mod_files = $commit_data["modified"];    
     // file_put_contents("./mod_files" . $counter, var_export($mod_files, true));
@@ -74,7 +74,7 @@ foreach ($commits as $commit_data) {
         // Ignore changes outside WebContent.
         if (strpos($f, 'WebContent/') !== 0) continue;
         // Copy file.
-        file_put_contents($web_dir .  $f, fopen($prefix . $f, 'r'));
+        file_put_contents($web_dir . $f, fopen($prefix . $f, 'r'));
         // Mark updated.
         $updated[$f] = TRUE;
     }
