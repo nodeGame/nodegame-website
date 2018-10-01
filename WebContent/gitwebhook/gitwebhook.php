@@ -73,9 +73,10 @@ foreach ($commits as $commit_data) {
         if ($updated[$f]) continue;
         // Ignore changes outside WebContent.
         if (strpos($f, 'WebContent/') !== 0) continue;
+        $filePath = $web_dir . substr($f, 11);
         // Copy file.
-        file_put_contents("./mod_files", $web_dir . $f);
-        file_put_contents($web_dir . $f, fopen($prefix . $f, 'r'));
+        file_put_contents("./mod_files", $filePath);
+        file_put_contents($filePath, fopen($prefix . $f, 'r'));
         // Mark updated.
         $updated[$f] = TRUE;
     }
