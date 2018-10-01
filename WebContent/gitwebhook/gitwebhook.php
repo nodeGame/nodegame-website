@@ -55,10 +55,25 @@ if (!is_array($decoded)) {
 
 // Process the JSON.
 
-$my_file = 'file.txt';
+$prefix = 'https://github.com/nodeGame/nodegame-website/blob/master/';
+
+$counter = 0;
+$mod_files = $decoded["commits"]["modified"];
+for ($f in $mod_files) {
+    // Ignore changes to gitwebhook directory (must update manually).
+    if (strpos($f, 'gitwebhook') !== false) continue;
+    // Ignore changes outside WebContent.
+    if (strpos($f, 'WebContent/") !== 0) continue;
+    // Copy file.
+    file_put_contents("./file", fopen($prefix . $f), 'r'));
+    $counter = $counter + 1;
+}  
+ 
+// Save last payload.
+$my_file = 'lastPayload.txt';
 $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
 fwrite($handle, $content);
 fclose($handle);
-logIt("OK", TRUE);
+logIt("OK. Files updated: " + $counter, TRUE);
 
 
