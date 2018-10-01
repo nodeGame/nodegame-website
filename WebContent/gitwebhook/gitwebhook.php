@@ -57,7 +57,7 @@ if (!is_array($decoded)) {
 
 // Process the JSON.
 
-$prefix = 'https://github.com/nodeGame/nodegame-website/blob/master/';
+$prefix = 'https://github.com/nodeGame/nodegame-website/raw/master/';
 
 $updated = array();
 // There might be more than 1 commit from last push.
