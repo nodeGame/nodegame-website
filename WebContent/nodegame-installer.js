@@ -1,1 +1,0 @@
-/home/stefano/www/nodegame/bin/nodegame-installer.js
