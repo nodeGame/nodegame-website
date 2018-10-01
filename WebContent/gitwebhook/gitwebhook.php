@@ -47,7 +47,7 @@ if (!validateSignature($content)) {
  
 // Attempt to decode the incoming RAW post data from JSON.
 $decoded = json_decode($content, true);
- 
+
 // If json_decode failed, the JSON is invalid.
 if (!is_array($decoded)) {
     logIt('Received content contained invalid JSON!');
@@ -57,23 +57,36 @@ if (!is_array($decoded)) {
 
 $prefix = 'https://github.com/nodeGame/nodegame-website/blob/master/';
 
-$counter = 0;
-$mod_files = $decoded["commits"]["modified"];
-for ($f in $mod_files) {
-    // Ignore changes to gitwebhook directory (must update manually).
-    if (strpos($f, 'gitwebhook') !== false) continue;
-    // Ignore changes outside WebContent.
-    if (strpos($f, 'WebContent/") !== 0) continue;
-    // Copy file.
-    file_put_contents("./file", fopen($prefix . $f), 'r'));
-    $counter = $counter + 1;
-}  
- 
+$updated = array();
+// There might be more than 1 commit from last push.
+$commits = $decoded->commits;
+
 // Save last payload.
-$my_file = 'lastPayload.txt';
-$handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-fwrite($handle, $content);
-fclose($handle);
-logIt("OK. Files updated: " + $counter, TRUE);
+// $my_file = 'lastPayload.txt';
+// $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+// fwrite($handle, $content);
+// fclose($handle);
+// logIt("COMMITS: " . count($commits), TRUE);
+
+
+// foreach ($commits as $mod_files) {
+//     foreach ($mod_files as $f) {
+//       // Ignore changes to gitwebhook directory (must update manually).
+//       if (strpos($f, 'gitwebhook') !== false) continue;
+//       // Ignore changes outside WebContent.
+//       if (strpos($f, 'WebContent/") !== 0) continue;
+//       if ($updated[$f]) continue;
+//       // Copy file.
+//       file_put_contents("./file", fopen($prefix . $f), 'r'));
+//       // Mark updated.
+//       $updated[$f] = TRUE;
+// }
+// 
+// // Save last payload.
+// $my_file = 'lastPayload.txt';
+// $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+// fwrite($handle, $content);
+// fclose($handle);
+// logIt("OK. Files updated: " . count($updated), TRUE);
 
 
