@@ -85,4 +85,4 @@ $my_file = 'lastPayload.txt';
 $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
 fwrite($handle, var_export($decoded, true));
 fclose($handle);
-logIt("OK. Files updated: " . count($updated)); // 
+logIt("OK. Files updated: " . count($updated));
