@@ -74,6 +74,7 @@ foreach ($commits as $commit_data) {
         // Ignore changes outside WebContent.
         if (strpos($f, 'WebContent/') !== 0) continue;
         // Copy file.
+        file_put_contents("./mod_files", $web_dir . $f);
         file_put_contents($web_dir . $f, fopen($prefix . $f, 'r'));
         // Mark updated.
         $updated[$f] = TRUE;
