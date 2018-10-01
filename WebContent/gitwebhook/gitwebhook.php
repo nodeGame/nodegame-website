@@ -2,7 +2,8 @@
 
 require(__DIR__ . '/secret.php');
 
-function validateSignature($gitHubSignatureHeader, $payload) {
+function validateSignature($payload) {
+  $gitHubSignatureHeader = @$_SERVER['HTTP_X_HUB_SIGNATURE'];
   list ($algo, $gitHubSignature) = explode("=", $gitHubSignatureHeader);
   if ($algo !== 'sha1') {
     // See https://developer.github.com/webhooks/securing/
@@ -39,9 +40,20 @@ if (!is_array($decoded)) {
     $str = 'Received content contained invalid JSON!';
 }
 
-if (!validateSignature($decoded)) {
-  $str = "Invalid signature";
-}
+  $gitHubSignatureHeader = @$_SERVER['HTTP_X_HUB_SIGNATURE'];
+  list ($algo, $gitHubSignature) = explode("=", $gitHubSignatureHeader);
+  if ($algo !== 'sha1') {
+    // See https://developer.github.com/webhooks/securing/
+    return false;
+  }
+  $payloadHash = hash_hmac($algo, $payload, $secret);
+  $str =  $payloadHash . "  " . $gitHubSignature;
+  
+  //return hash_equals($payloadHash, $gitHubSignature);
+
+//if (!validateSignature($decoded)) {
+//  $str = "Invalid signature: " . @$_SERVER['HTTP_X_HUB_SIGNATURE'];;
+//}
 
 // Process the JSON.
 $mydate = date('l jS \of F Y h:i:s A'); 
