@@ -65,7 +65,7 @@ $commits = $decoded["commits"];
 $web_dir = __DIR__ . '../';
 foreach ($commits as $commit_data) {
     $mod_files = $commit_data["modified"];    
-    file_put_contents("./mod_files" . $counter, var_export($mod_files, true));
+    // file_put_contents("./mod_files" . $counter, var_export($mod_files, true));
     foreach ($mod_files as $f) {
         // Ignore changes to gitwebhook directory (must update manually).
         if (strpos($f, 'gitwebhook') !== false) continue;
@@ -73,8 +73,8 @@ foreach ($commits as $commit_data) {
         if ($updated[$f]) continue;
         // Ignore changes outside WebContent.
         if (strpos($f, 'WebContent/') !== 0) continue;
-        // Copy file. // $web_dir .  $f
-        file_put_contents('./file', fopen($prefix . $f, 'r'));
+        // Copy file.
+        file_put_contents($web_dir .  $f, fopen($prefix . $f, 'r'));
         // Mark updated.
         $updated[$f] = TRUE;
     }
