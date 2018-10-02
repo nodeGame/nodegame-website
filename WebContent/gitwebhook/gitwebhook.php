@@ -85,9 +85,14 @@ foreach ($commits as $commit_data) {
             logIt('Error fetching file: ' . $f);
         }
         else {
-            file_put_contents($filePath, $fileContent);
-            // Mark updated.
-            $updated[$f] = TRUE;
+            $res = file_put_contents($filePath, $fileContent);
+            if ($res) {
+                // Mark updated.
+                $updated[$f] = $f;
+            }
+            else {
+                logIt('Error writing file: ' . $f);
+            }
         }
 
         // file_put_contents($filePath, fopen($prefix . $f, 'r'));
@@ -101,4 +106,4 @@ $my_file = 'lastPayload.txt';
 $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
 fwrite($handle, var_export($decoded, true));
 fclose($handle);
-logIt("OK. Files updated: " . count($updated));
+logIt("OK. Files updated (" . count($updated) . "): " . implode(" ", $updated));
