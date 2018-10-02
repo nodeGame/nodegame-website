@@ -1,5 +1,9 @@
 <?php
 
+# Enable Error Reporting and Display:
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+ini_set('display_errors', 1);
+
 require(__DIR__ . '/secret.php');
 
 function validateSignature($gitHubSignatureHeader, $payload, $secret) {
