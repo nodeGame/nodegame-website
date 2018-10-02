@@ -80,12 +80,12 @@ foreach ($commits as $commit_data) {
         $filePath = $web_dir . substr($f, 11);
         // Copy file.
         // file_put_contents("./mod_files", $filePath);
+        sleep(0.5);
         $fileContent = file_get_contents($prefix . $f);
         if ($fileContent == FALSE) {
             logIt('Error fetching file: ' . $f);
         }
         else {
-            sleep(0.5);
             $res = file_put_contents($filePath, $fileContent);
             if ($res) {
                 // Mark updated.
