@@ -79,10 +79,20 @@ foreach ($commits as $commit_data) {
         if (strpos($f, 'WebContent/') !== 0) continue;
         $filePath = $web_dir . substr($f, 11);
         // Copy file.
-        file_put_contents("./mod_files", $filePath);
-        file_put_contents($filePath, fopen($prefix . $f, 'r'));
+        // file_put_contents("./mod_files", $filePath);
+        $fileContent = file_get_contents($prefix . $f);
+        if ($fileContent == FALSE) {
+            logIt('Error fetching file: ' . $f);
+        }
+        else {
+            file_put_contents($filePath, $fileContent);
+            // Mark updated.
+            $updated[$f] = TRUE;
+        }
+
+        // file_put_contents($filePath, fopen($prefix . $f, 'r'));
         // Mark updated.
-        $updated[$f] = TRUE;
+        // $updated[$f] = TRUE;
     }
 }
 
