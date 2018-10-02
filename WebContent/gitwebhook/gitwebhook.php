@@ -68,7 +68,7 @@ $updated = array();
 $commits = $decoded["commits"];
 $web_dir = realpath(__DIR__ . '/..') . '/';
 foreach ($commits as $commit_data) {
-    $mod_files = $commit_data["modified"];    
+    $mod_files = $commit_data["modified"];
     // file_put_contents("./mod_files" . $counter, var_export($mod_files, true));
     foreach ($mod_files as $f) {
         // Ignore changes to gitwebhook directory (must update manually).
