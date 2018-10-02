@@ -60,7 +60,7 @@ if (!is_array($decoded)) {
 }
 
 // Process the JSON.
-
+sleep(0.5);
 $prefix = 'https://github.com/nodeGame/nodegame-website/raw/master/';
 
 $updated = array();
@@ -80,7 +80,6 @@ foreach ($commits as $commit_data) {
         $filePath = $web_dir . substr($f, 11);
         // Copy file.
         // file_put_contents("./mod_files", $filePath);
-        sleep(0.5);
         $fileContent = file_get_contents($prefix . $f);
         if ($fileContent == FALSE) {
             logIt('Error fetching file: ' . $f);
