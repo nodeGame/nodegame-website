@@ -113,16 +113,6 @@ div#screenshots {
     background: #007399;
 }
 
-.news {
-  display: block;
-  color: #820e19;
-  font-family: verdana;
-  margin-top: 50px;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-
 /* Screenshots animation */
 
 .thumb {
