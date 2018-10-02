@@ -72,11 +72,11 @@ foreach ($commits as $commit_data) {
     // file_put_contents("./mod_files" . $counter, var_export($mod_files, true));
     foreach ($mod_files as $f) {
         // Ignore changes to gitwebhook directory (must update manually).
-        // if (strpos($f, 'gitwebhook') !== false) continue;
+        if (strpos($f, 'gitwebhook') !== false) continue;
         // Ignore files already copied.
-        // if ($updated[$f]) continue;
+        if ($updated[$f]) continue;
         // Ignore changes outside WebContent.
-        // if (strpos($f, 'WebContent/') !== 0) continue;
+        if (strpos($f, 'WebContent/') !== 0) continue;
         $filePath = $web_dir . substr($f, 11);
         // Copy file.
         // file_put_contents("./mod_files", $filePath);
@@ -85,6 +85,7 @@ foreach ($commits as $commit_data) {
             logIt('Error fetching file: ' . $f);
         }
         else {
+            sleep(0.5);
             $res = file_put_contents($filePath, $fileContent);
             if ($res) {
                 // Mark updated.
