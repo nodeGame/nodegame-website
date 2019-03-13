@@ -72,6 +72,7 @@ header {
   width: 100%;
   z-index: 100;
   border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 15px lightgrey;
 }
 
 #navbar {
@@ -195,7 +196,7 @@ span.code {
 
 #navbar a.active{font-weight:bold;color:#353535;}
 
-#navmenu{padding:0;margin:0;right:0px;z-index:1000;margin-right:15px;}
+#navmenu{padding:0;margin:0;right:0px;z-index:1000;margin-right:15px;font-weight:600;}
 
 #navmenu>li{list-style:none;padding:0;float:left;}
 
