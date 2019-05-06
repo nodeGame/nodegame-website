@@ -88,7 +88,19 @@
  
       <dl id="dl-changelog">
 
-
+        <dt>5.3.1 - <span class="release-date">Release Date 05/05/2019</span></dt>
+        <dd>Launcher option `--default` sets the default channel at startup. Channel settings `defaultChannel` has been deprecated because unreliable when multiple games are found in games folder.</dd>
+        <dd>Improved installer, better handling of conflicts with pre-existing node_modules directories.</dd>
+        <dd>Widget CustomInput implements setValues method with random values for testing purposes.</dd>
+        <dd>Widget CustomInput widget has more custom types: 'us_state', 'us_zip'.</dd>
+        <dd>Widget ChoiceManager discard hidden or disabled nested forms from the return value of `getValues`.</dd>
+        <dd>Widget ChoiceManager has reset method to reset all nested forms.</dd>
+        <dd>`W.cssRule` is a method to add a custom CSS rule to the current page.</dd>
+        <dd>`node.widgets.append` also accepts the id of and element, in addition to the element itself.</dd>
+        <dd>All "Survey" widgets (ChoiceManager, ChoiceTable, CustomInput, etc.) have options `highlight` and `markAttempt` true by default.</dd>
+        <dd>Improved error messages on server.</dd>
+        <dd>Typos and bug fixing.</dd>
+	
         <dt>5.1.0 - <span class="release-date">Release Date 04/01/2019</span></dt>
 	<dd>CustomInput widget.</dd>
 	<dd>Widgets garbage collection.</dd>
