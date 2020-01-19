@@ -90,36 +90,105 @@
     
     <div id="all">
       
-       
-
       <h2 id="title">Donate</h2>
       <hr>
-      
-      If you like nodeGame, you can support its development through
-      donating money through any of the following platforms/services:
 
-      <dl>
-        <dt>Crypto</dt>
-        <dd>Bitcoin: <input readonly id="btc" value="33sTHCcfnLYu8wbHy9V6BEXZ4wUrd5zEqV" /></dd>
-        <dd>Ethereum: <input readonly id="eth" value="0xf3F8966b2c9d24788Cdb7dd184d81C988D9e2fbf" /></dd>
-        <dd>Tezos: <input readonly id="xtz" value="tz1STvAMgCt9xwdTbooU6j18MrsWkdhtCSDH" /></dd>
+      <p>
+      If you like nodeGame, you can support its development donating
+      money through any of the platforms/services below. <em>Any amount
+      counts.</em>
+      </p>
+      <p>
+      Your contribution will help a growing number of academic
+      researchers and students around the world to carry out online
+      experiments and bring about scientific progress in the field of
+      behavioral sciences.
+      </p>
+      <p>
+      <strong>Thank you always,</strong>
+      <br/><br/>
+      Stefano Balietti, creator and lead developer of nodeGame
+      <br/><br/>
+      </p>
+      <dl id="donate-dl">
 
         
         <dt>GitHub Sponsors</dt>
+
+        <dd>You can sponsor nodeGame with the
+          program <a href="https://github.com/sponsors/shakty"
+          target="_blank">GitHub Sponsors</a>. Good news, Github is
+          also matching your contributions!</dd>
         
+        <dt>Crypto</dt>
+        
+        <dd>
+          You can donate digital cryptocurrency to nodeGame using the
+          following addresses: <br/>
+          
+          <span class="crypto-currency">Bitcoin:</span>
+          <input readonly id="btc" class="crypto-address"
+          value="33sTHCcfnLYu8wbHy9V6BEXZ4wUrd5zEqV" />
+          <input type="button" class="btn btn-sm btn-info" onclick="copyText('btc')"
+          value="Copy" />
+          <br/>
+          <span class="crypto-currency">Ethereum:</span>
+          <input readonly id="eth" class="crypto-address" value="0xf3F8966b2c9d24788Cdb7dd184d81C988D9e2fbf" />
+          <input type="button" class="btn btn-sm btn-info" onclick="copyText('eth')"
+          value="Copy" />
+        
+          <br/>
+          <span class="crypto-currency">Tezos:</span>
+            <input readonly class="crypto-address" id="xtz"
+                        value="tz1STvAMgCt9xwdTbooU6j18MrsWkdhtCSDH"
+                        />
+          <input type="button" class="btn btn-sm btn-info" onclick="copyText('xtz')"
+                        value="Copy" />
+        </dd>
+
         <dt>Paypal</dt>
+        
+        <dd>You can make a donation to nodeGame with your credit card
+        using <a href="https://www.paypal.me/balietti"
+        target="_blank">Paypal</a>.</dd>
+        
 
         <dt>Patreon</dt>
-
-        <dt>The Giving Block</dt>
-
+        <dd>
+          You can become a nodeGame patron on
+          the <a href="https://patreon.com/balietti"
+          target="_blank">Patreon</a> platform. However, remember a
+          percentage of your donation will be kept by Patreon.
+        </dd>
+          
         <dt>Brave Creators</dt>
+
+        <dd>
+          You can tip nodeGame using
+          the <a href="https://brave.com/nod321" target="_blank">Brave
+          browser</a>. The Brave browser is a fast, private and secure
+          web browser with an integrated system of rewards for content
+          creators.
+        </dd>
+        
       </dl>
         
     </div>
     <footer></footer>
   </body>
-  <script type="text/javascript">      
+  <script type="text/javascript">
+    function copyText(id) {
+        debugger;
+        var inp = document.getElementById(id);
+        try {
+            inp.select();
+            inp.setSelectionRange(0, 99999); /* For mobile devices */
+            document.execCommand('copy', false);
+            alert('Address Copied!');
+        } catch (err) {
+            alert('Your browser does not support this feature');
+        }
+    }
     // Analytics.
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-34089835-3']);

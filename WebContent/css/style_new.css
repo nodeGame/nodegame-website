@@ -7,142 +7,142 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers:400,700');
 
 body {
-  margin: 0;
-  padding-top: 0;
-  color: #666;
-  background: white; /* #f4f4f4; rgba(255,255,255,.9);*/
-  font: 400 14px/1.6 "Open Sans",sans-serif;
-  color: #555;
+    margin: 0;
+    padding-top: 0;
+    color: #666;
+    background: white; /* #f4f4f4; rgba(255,255,255,.9);*/
+    font: 400 14px/1.6 "Open Sans",sans-serif;
+    color: #555;
 }
 
 div#all {   
-  margin: 100px auto;
-  max-width: 700px;
-  /* font-family: "Arial", "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", "Verdana", "sans-serif"; */
-  padding: 0 30px 10px 30px;
+    margin: 100px auto;
+    max-width: 700px;
+    /* font-family: "Arial", "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", "Verdana", "sans-serif"; */
+    padding: 0 30px 10px 30px;
 }
 
 div#all h2 {
-  margin-top: 70px;
-  font-weight: 500;
+    margin-top: 70px;
+    font-weight: 500;
 }
 
 div#all h2#title {
-  margin-top: 20px;
-  font-size: 1.6em;
-  font-weight: bold;
-  text-align: center;
+    margin-top: 20px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
 }
 
 span.code {
-  font-family: courier, verdana;
+    font-family: courier, verdana;
 }
 
 #nodegame-version{
-  font-size: 1.5em;
-  margin-left: 0.5em;
-  color: #259dff!important;
-  font-weight: 400;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    color: #259dff!important;
+    font-weight: 400;
 }
 
 footer {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 hr {
-  margin: 20px 10px 20px 10px;
+    margin: 20px 10px 20px 10px;
 }
 
 p#headline {
-  text-align: center;
-  font-size: 26px;
-  margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 26px;
+    margin: 20px 0 20px 0;
 }
 
 
 /* Nav Bar */
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #eee;
-  width: 100%;
-  z-index: 100;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 15px lightgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #eee;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 15px lightgrey;
 }
 
 #navbar {
-  margin: auto;
-  max-width: 700px;
-  position: relative;
-  display: flex;
-  top: 15px;
-  box-sizing: content-box;
-  font-size: 1.2em;
+    margin: auto;
+    max-width: 700px;
+    position: relative;
+    display: flex;
+    top: 15px;
+    box-sizing: content-box;
+    font-size: 1.2em;
 }
 
 #navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar ul li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 
 #navbar ul li a:active {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 
 #navbar ul li {
-  margin: 0;
+    margin: 0;
 }
 
 /* Main Content */
 
 .divContainer {
-  margin: 20px auto;
-  /* text-align: center; */
-  clear: both;
-  display: block;
-  font-size: 1.15em;
+    margin: 20px auto;
+    /* text-align: center; */
+    clear: both;
+    display: block;
+    font-size: 1.15em;
 }
 
 .mainDivContainer {  
-  font-size: 1em;
+    font-size: 1em;
 }
 
 .mainLink {
-  display: block;
-  position: relative;
-  font-size: 3em !important;
-  width: 65%;
-  margin: 0 auto;
+    display: block;
+    position: relative;
+    font-size: 3em !important;
+    width: 65%;
+    margin: 0 auto;
 }
 
 .mainButton {
-  width: 100%;
-  background-color: #008CBA;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: hand;
-  cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: hand;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .mainButton:hover {
-  background: #007399;
+    background: #007399;
 }
 
 pre { font-family: monospace; margin-top: 1em;}
@@ -151,45 +151,45 @@ pre { font-family: monospace; margin-top: 1em;}
 
 #dl-faq dt,
 #dl-changelog dt {
-  font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 #dl-pub dt {
-  font-size: 1.3em;
-  margin-top:1em;
+    font-size: 1.3em;
+    margin-top:1em;
 }
 
 #dl-pub dd {
-  font-size: 1.1em;
-  margin-top: 20px;
-  margin-bottom: 10px;  
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 10px;  
 }
 
 .dobullet {
-  margin-left: +10px;
-  display: list-item;
-  list-style: none;
+    margin-left: +10px;
+    display: list-item;
+    list-style: none;
 }
 
 #dl-changelog dd {
-  display: list-item;
-  list-style-type: disc;
-  margin-bottom: 0.7em;
-  margin-left: 2em;
+    display: list-item;
+    list-style-type: disc;
+    margin-bottom: 0.7em;
+    margin-left: 2em;
 }
 
 .myul {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 span.code {
-  font-family: monospace;
+    font-family: monospace;
 }
 
 .release-date {
-  font-size: 0.85em;
+    font-size: 0.85em;
 }
 
 #navbar a{color:#666;padding-left:20px;-webkit-font-smoothing:subpixel-antialiased;}
@@ -217,48 +217,71 @@ span.code {
 
 
 @media only screen and (min-width: 800px) {
-  #header {
-    height: 55px;
-  }
-  
-  #header-right-floater {
-    position: absolute;
-    float: right;
-    top: 15px;
-    right: 1em;
-  }
+    #header {
+        height: 55px;
+    }
+    
+    #header-right-floater {
+        position: absolute;
+        float: right;
+        top: 15px;
+        right: 1em;
+    }
 }
 
 
 @media only screen and (max-width: 800px){
-  #header {
-    height: 110px;
-  }
-  
-  #header-right-floater {
-    display: block;
-    position: relative;
-    top: 15px;    
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
+    #header {
+        height: 110px;
+    }
+    
+    #header-right-floater {
+        display: block;
+        position: relative;
+        top: 15px;    
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 }
 
 #forum-button {
-  height: 27px;
-  border: 1px solid #CCC;
-  box-shadow: 0;
-  border-radius: 5px;
-  vertical-align: top;
-  background: #FFFFFD;
-  font-size: 12px;
-  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    height: 27px;
+    border: 1px solid #CCC;
+    box-shadow: 0;
+    border-radius: 5px;
+    vertical-align: top;
+    background: #FFFFFD;
+    font-size: 12px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 
 .news {
-  display: block;
-  color: #820e19;
-  margin-top: 50px;
-  font-size: 1.1em;
+    display: block;
+    color: #820e19;
+    margin-top: 50px;
+    font-size: 1.1em;
+}
+
+.crypto-address {
+    width: 350px;
+    padding: 4px;
+    text-align: center;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.crypto-currency {
+    width: 80px;
+    display: inline-block;
+    text-align: right;
+}
+
+#donate-dl dt {
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+#donate-dl dd {
+    margin-bottom: 20px;
 }
