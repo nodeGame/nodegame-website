@@ -8,15 +8,15 @@
 	                              javascript framework for online, multiplayer, real-time games
 	                              and experiments in the browser" />
     <meta name="keywords" content="games,node,JavaScript,synchronous,real-time,multiplayer,experiment,behavioral,social">
-    
+
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style_new.css" />
-    
+
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;amp;subset=latin,latin-ext">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- <script data-cfasync="false" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-    
+
     <title>nodeGame: Changelog</title>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
@@ -34,14 +34,14 @@
           <li><a href="index.htm" id="home-menu">Home</a></li>
           <li>
             <ul id="demo-menu" style="">
-              <li><a href="https://nodegamedemo.herokuapp.com" target="_blank">Demo</a>             
+              <li><a href="https://nodegamedemo.herokuapp.com" target="_blank">Demo</a>
               </li>
             </ul>
           </li>
           <li>
           <li>
             <ul id="install-menu" style="">
-              <li><a href="install.htm">Install</a>             
+              <li><a href="install.htm">Install</a>
               </li>
             </ul>
           </li>
@@ -65,31 +65,39 @@
           </li>
           <li>
             <ul id="donate-menu" class="menu">
-              <li><a href="donate.htm">Donate</a>              
+              <li><a href="donate.htm">Donate</a>
               </li>
             </ul>
           </li>
         </ul>
       </div>
-      
+
       <div id="header-right-floater">
-        
+
         <a href="https://twitter.com/nodegameorg" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @nodegameorg</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
         <a class="github-button" href="https://github.com/nodeGame/nodegame" data-size="large" data-show-count="true" aria-label="Star nodeGame/nodegame on GitHub">Star</a>
 
 
-        <a style="margin-top:0; top:0;" href="https://groups.google.com/forum/?fromgroups#!forum/nodegame" target="_blank"><button id="forum-button"><img style="margin-top:0; top:0; height: 20px" src="images/google-group-scaled.png" alt="Forum" /> Forum</button></a> 
+        <a style="margin-top:0; top:0;" href="https://groups.google.com/forum/?fromgroups#!forum/nodegame" target="_blank"><button id="forum-button"><img style="margin-top:0; top:0; height: 20px" src="images/google-group-scaled.png" alt="Forum" /> Forum</button></a>
       </div>
     </header>
 
-    
+
     <div id="all">
 
       <h2 id="title">Changelog</h2>
       <hr>
- 
+
       <dl id="dl-changelog">
+
+        <dt>5.8.0 - <span class="release-date">Release Date
+              01/30/2020</span></dt>
+              <dd>Fixed autoplay client type in ultimatum game.</dd>
+              <dd>ChoiceTable widget ignores "correct" in setValues method,
+                  if there is no correct choice (instead of throwing an error).
+              </dd>
+              <dd>ChoiceTable widget option "oneTimeClick".</dd>
 
         <dt>5.8.0 - <span class="release-date">Release Date
             01/21/2020</span></dt>
@@ -100,12 +108,12 @@
         <dd>Game.stepBack method is added as a central point to
           control stepping back into the game sequence.</dd>
         <dd>Game.getPreviousStep method accepts additional paramters.</dd>
-        
+
         <dt>5.7.0 - <span class="release-date">Release Date
             01/17/2020</span></dt>
         <dd>GameRoom.computeBonus handles disconnected players.</dd>
         <dd>Fixed bug not executing the exit callback of widget steps.</dd>
-        
+
         <dt>5.6.4 - <span class="release-date">Release Date
             01/16/2020</span></dt>
         <dd>ChoiceTableGroup widget correctly distinguishes between options
@@ -114,18 +122,18 @@
         option and added sortValue option for getValues method.</dd>
         <dd>EndScreen widget displays any winning value (removed
         constrained > 0).</dd>
-        
+
         <dt>5.6.3 - <span class="release-date">Release Date
             01/10/2020</span></dt>
         <dd>BackButton widget correctly hadles multiple back calls.</dd>
-       
+
         <dt>5.6.2 - <span class="release-date">Release Date
             01/09/2020</span></dt>
         <dd>Client property "win" is initialized to zero in every client.</dd>
         <dd>Updated RiskGauge widget with new options "values" and
           "scale".</dd>
         <dd>Minor fixes.</dd>
-        
+
         <dt>5.6.1 - <span class="release-date">Release Date
             12/20/2019</span></dt>
         <dd>Fixed experimental feature to update waiting room settings
@@ -144,12 +152,12 @@
         <dd>Done callback of widget steps does not overwrite node.done
         parameters when return value is undefined.</dd>
         <dd>Several small bug fixes.</dd>
-        
+
         <dt>5.4.0 - <span class="release-date">Release Date 05/13/2019</span></dt>
         <dd>Upgraded VisualStage widget: two visualizations modes, and rounds count.</dd>
         <dd>Table class renders cells with colspan attribute.</dd>
         <dd>Home Page enabled and --default option bug fixed.</dd>
-                
+
         <dt>5.3.1 - <span class="release-date">Release Date 05/07/2019</span></dt>
         <dd>Launcher option `--default` sets the default channel at startup. Channel settings `defaultChannel` has been deprecated because unreliable when multiple games are found in games folder.</dd>
         <dd>Improved installer, better handling of conflicts with pre-existing node_modules directories.</dd>
@@ -162,13 +170,13 @@
         <dd>All "Survey" widgets (ChoiceManager, ChoiceTable, CustomInput, etc.) have options `highlight` and `markAttempt` true by default.</dd>
         <dd>Improved error messages on server.</dd>
         <dd>Typos and bug fixing.</dd>
-	
+
         <dt>5.1.0 - <span class="release-date">Release Date 04/01/2019</span></dt>
 	<dd>CustomInput widget.</dd>
 	<dd>Widgets garbage collection.</dd>
 	<dd>Improved ChoiceTable, ChoiceManager and Feedback widgets.</dd>
 	<dd>Improved handling of frame height.</dd>
-        
+
         <dt>5.0.1 - <span class="release-date">Release Date 03/15/2019</span></dt>
 	<dd>Fixed VisualTimer.restart() bug introduced in v5.</dd>
 	<dd>Server does not scan hidden directories in games folder.</dd>
@@ -193,8 +201,8 @@
         install older versions.</dd>
         <dd>Several minor fixes and improvements, see CHANGELOG files in each
         repo.</dd>
-        
-        
+
+
         <dt>4.3.2 - <span class="release-date">Release Date 09/30/2018</span></dt>
         <dd>Re-enabled support for games without treatment descriptions.</dd>
 
@@ -204,15 +212,15 @@
           settings, then dropdown menu allows user to select the treatment for
           the game.</dd>
 
-        
+
         <dt>4.2.0 - <span class="release-date">Release Date 09/14/2018</span></dt>
         <dd>Improved nodegame game-create command: automatically generates generates channel files from interface, adds README and LICENSE (MIT)</dd>
 
-        
+
         <dt>4.1.5 - <span class="release-date">Release Date 09/13/2018</span></dt>
         <dd>Fixed installer for Node version &lt; 8.x</dd>
 
-        
+
         <dt>4.1.3 - <span class="release-date">Release Date 09/07/2018</span></dt>
         <dd>Improved installer</dd>
         <dd>Msg anti-spoofing support by default enabled on PlayerServer</dd>
@@ -220,10 +228,10 @@
         <dd>More options on Monitor, including display of last error</dd>
         <dd>Improved nodegame-mturk support</dd>
         <dd>Fixed tests</dd>
-        
+
         <dt>4.0.4 - <span class="release-date">Release Date 07/05/2018</span></dt>
         <dd>Improved monitor interface: errors happened on clients displayed directly on Clients List widget.</dd>
-          
+
         <dt>4.0.0 - <span class="release-date">Release Date 04/22/2018</span></dt>
         <dd>All available games are displayed in a grid of responsive cards in
 the server home page.</dd>
@@ -250,7 +258,7 @@ to easily save a bonus file and send bonus to each player.</dd>
         <dd>Window object has updated to the latest version
           of <span class="code">JSUS</span>, meaning that some commands to
           manipulate and create DOM elements have changed.</dd>
-        <dd>Full list of 
+        <dd>Full list of
           <a href="https://github.com/nodeGame/nodegame/wiki/New-Features-v4"
           target="_blank">new features</a>
           and <a href="https://github.com/nodeGame/nodegame/wiki/Migratiing-To-v4"
@@ -264,7 +272,7 @@ to easily save a bonus file and send bonus to each player.</dd>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-34089835-3']);
     _gaq.push(['_trackPageview']);
-    
+
     (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
