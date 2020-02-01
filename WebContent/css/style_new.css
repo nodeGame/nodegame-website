@@ -285,3 +285,12 @@ span.code {
 #donate-dl dd {
     margin-bottom: 20px;
 }
+
+.courses-dl {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.courses-dl dt {
+    margin-top: 20px;
+}
