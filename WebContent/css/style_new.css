@@ -213,6 +213,19 @@ span.code {
 
 #menu ul a{color:#555;padding-right:7px;}#menu ul a.active{color:#259dff;}
 
+@media only screen and (min-width: 800px) {
+    #header {
+        height: 55px;
+    }
+
+    #header-right-floater {
+        position: absolute;
+        float: right;
+        top: 15px;
+        right: 1em;
+    }
+}
+
 @media only screen and (max-width: 800px){
     #header {
         height: 110px;
