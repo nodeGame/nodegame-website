@@ -242,6 +242,10 @@ span.code {
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
+    div#all {
+        margin: 140px auto;
+    }
 }
 
 #forum-button {
@@ -285,7 +289,7 @@ span.code {
     margin-bottom: 20px;
 }
 
-.courses-dl {    
+.courses-dl {
     margin-top: 10px;
 }
 
