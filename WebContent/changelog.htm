@@ -96,6 +96,67 @@
       <hr>
 
       <dl id="dl-changelog">
+
+        <dt>5.11.0 - <span class="release-date">Release Date
+            10/27/2020</span>
+        </dt>
+
+            <dd>Option port can be specified at command line.</dd>
+            <dd>Minor bug fixes and improvements.</dd>
+
+            <dd>Generator:
+                <ul>
+                    <li>Single-player template when creating new games.</li>
+                    <li>Minor fixes and better error handling.</li>
+                </ul>
+            </dd>
+
+            <dd>Server:
+                <ul>
+                    <li>GameRoom API improved new method updateWin and more
+                        options for computeBonus.</li>
+                    <li>Log messages containing errors are displayed to console.</li>
+                    <li>Updated Socket.io and Express dependencies.</li>
+                    <li>Channels can be disabled in channel.settings.js file.</li>
+                </ul>
+
+            <dd>Client:
+                <ul>
+                    <li>New Timer API for random events and timeouts.</li>
+                    <li>New Game methods: isStep, isStage, isRound,
+                        isWidgetStep, getStepId, getStageId.</li>
+                    <li>Improved default reconnection mechanism:
+                        role and partner automatically set, default reconnect
+                        callback resending game messages from same step.</li>
+                    <li>Role, partner, and session automatically added to
+                        database entry.</li>
+                    <li>Simplified node.done (accepts only one parameter,
+                        removed backword-compatible checks).</li>
+                </ul>
+            </dd>
+
+            <dd>NDDB:
+                <ul>
+                    <li>Improved CSV saving support with options to keep
+                        files updated.</li>
+                </ul>
+            </dd>
+
+            <dd>Widgets:
+                <ul>
+                    <li>Auto-scroll into widgets required user's action.</li>
+                    <li>New method Widget.isActionRequired.</li>
+                    <li>Required widgets can block node.done, even if
+                        not widget-steps.<li>
+                    <li>New risk-elicitation widget: RiskGauge has Bomb method.</li>
+                    <li>Several improvements to existing widgets.<li>
+                </ul>
+            </dd>
+
+            <dd>Window: auto-scroll up when loading a new frame.</dd>
+
+            
+
          <dt>5.11.0 - <span class="release-date">Release Date
               08/20/2020</span></dt>
               <dd>Bug fix introduced in previous version: stage init callback executed at every step.</dd>
