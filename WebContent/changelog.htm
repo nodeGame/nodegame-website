@@ -97,6 +97,29 @@
 
       <dl id="dl-changelog">
 
+          <dt>6.3.0 - <span class="release-date">Release Date
+              04/08/2021</span>
+          </dt>
+          <dd>Added --no-games option to installer.</dd>
+          <dd>Added: stager.extendSteps and stager.extendStages</dd>
+          <dd>Added: --no-games option to installer.</dd>
+          <dd>Improved several widgets.</dd>
+          <dd>Improved: Info Panel.</dd>
+          <dd>Improved: stager.skip, stager.unskip accept arrays.</dd>
+          <dd>Change: flag missValues returned by widgets does not block stepping.</dd>
+          <dd>Change: DONE event is async with respect to node.game.step, to let all DONE listeners finish first.</dd>
+          <dd>Change: InfoPanel creation automatically adds the toggle button.</dd>
+          <dd>Fixed: renderTemplate bug when auth is on (thanks jjensenius3).</dd>
+          <dd>Fixed: automatic pwd generation (thanks jjensenius3).</dd>
+          <dd>Several minor bug fixing.</dd>
+
+          <dt>6.2.0 - <span class="release-date">Release Date
+              02/09/2020</span>
+          </dt>
+          <dd>WaitRoom CHOSEN_TREATMENT receives number of dispatches in callback.</dd>
+          <dd>WaitRoom ROTATION_OFFSET offsets the begin of rotation when "treatment_rotate" is chosen.</dd>
+          <dd>WaitRoom "treatment_rotate" option uses number of dispatches to rotate instead of room counter, because room counter is not always increased when DISPATCH_TO_SAME_ROOM option is true.</dd>
+
           <dt>6.2.4 - <span class="release-date">Release Date
               02/10/2020</span>
           </dt>
