@@ -97,6 +97,37 @@
 
       <dl id="dl-changelog">
 
+          <dt>7.0.0 - <span class="release-date">Release Date TBA, available in dev</span>
+          </dt>
+          <dd>Added: new design for survey widgets.</dd>
+          <dd>Added: game sequence is decided by the game room, allowing different sequences in different treatments.</dd>
+          <dd>Added: new authorization mode "external" for ids provided by a third party upon connection.</dd>
+          <dd>Added: waiting room dispatching method "treatment_latin_square" to maximize entropy in treatments rotation.</dd>
+          <dd>Added: "stepId" and "stageId" added to all DONE messages (because game sequence is treatment dependent).</dd>
+          <dd>Added: "treatment" added to every entry in the memory database.</dd>
+          <dd>Added: client errors on DEBUG mode are displayed on overlay div.</dd>
+          <dd>Added: new alias node.on.done('stageId.stepId').</dd>
+          <dd>Added: new method stager.require allows splitting complex game sequences across different files.</dd>
+          <dd>Added: memory database's new methods: stream, journal, loadDir, and more.</dd>
+          <dd>Added: memory database supports NDJSON format.</dd>
+          <dd>Added: easy export from JSON and NDJSON to csv logs and results via command-line and monitor interface.</dd>
+          <dd>Added: new widgets SDO (Social Dominance Orientation) and GroupMalleability.</dd>
+          <dd>Added: new option for waitroom treatment selection "treatment_latin_square".</dd>
+          <dd>Added: error box with error messages directly under survey widgets.</dd>
+          <dd>Improved: overhauled monitor interface based on Bootstrap 5.</dd>
+          <dd>Improved: widgets .append() adjust frame heights.</dd>
+          <dd>Improved: frame is displayed at once after all changes in the step callback have taken place.</dd>
+          <dd>Improved: node.timer methods can be chained.</dd>
+          <dd>Improved: Memory database: CSV files are created with headers from XXX.</dd>
+          <dd>Improved: WaitScreen texts fully parameterized (thanks jjensenius3).</dd>
+          <dd>Improved: cells in ChoiceTables are of equal size by default.</dd>
+          <dd>Improved: VisualStage widget accept functions that return the name of the step.</dd>
+          <dd>Fixed: auto scroll-up of frames between steps.</dd>
+          <dd>Fixed: multiple monitors disconnect bug.</dd>
+          <dd>Fixed: several minor bug fixes.</dd>
+          <dd>Updated: Bootstrap 5.x (partial).</dd>
+          <dd>Updated: Socket.io 4.x</dd>
+
           <dt>6.3.0 - <span class="release-date">Release Date
               04/08/2021</span>
           </dt>
@@ -111,7 +142,7 @@
           <dd>Fixed: stager.stepBlock and stager.stageBlock no longer raise wrong errors under some special conditions.</dd>
           <dd>Fixed: renderTemplate bug when auth is on (thanks jjensenius3).</dd>
           <dd>Fixed: automatic pwd generation (thanks jjensenius3).</dd>
-          <dd>Fixed:Several minor bug fixing.</dd>
+          <dd>Fixed: several minor bug fixes.</dd>
           <dd>Deprecated: stager.stepBlock and stager.stageBlock will only accept two parameters in future releases.</dd>
 
           <dt>6.2.0 - <span class="release-date">Release Date
